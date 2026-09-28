@@ -1,5 +1,7 @@
-// The two festival teams and how many team points each placing earns.
-const TEAMS = ['Aliora', 'Nexiora'];            // Team 1, Team 2
-const PLACE_POINTS = { 1: 5, 2: 3, 3: 1 };      // 1st / 2nd / 3rd
+// Team 1 and Team 2 — colors come from the Rendezvous'26 gradient palette.
+export const TEAMS = [
+  { key: 'Aliora',  label: 'Team 1', color: '#01b998' },   // teal
+  { key: 'Nexiora', label: 'Team 2', color: '#aee515' }    // lime
+];
 
-module.exports = { TEAMS, PLACE_POINTS };
+export const teamMeta = (name) => TEAMS.find(t => t.key === name);
